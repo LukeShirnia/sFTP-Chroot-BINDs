@@ -9,7 +9,7 @@ shopt -s nocasematch; #shell option -s allows for case insensitivty throughout t
  
  
 #run script with:
-#bash <(curl replace_with_notes.rackerjackrawfile --silent)
+#bash <(curl -s https://raw.githubusercontent.com/luke7858/sFTP-Chroot-with-BIND-Mounts/master/sFTPchroot.sh)
  
  
 ####################################################################################
