@@ -1,11 +1,11 @@
 #!/bin/bash
 shopt -s nocasematch; #shell option -s allows for case insensitivty throughout the script
-\#######################################################
-\#sFTP Chroots with bind mount script v1.3
-\#Author: Luke Shirnia
-\#Website: lukeslinuxlessons.co.uk
-\#Copyright
-\#######################################################
+#######################################################
+#sFTP Chroots with bind mount script v1.3
+#Author: Luke Shirnia
+#Website: lukeslinuxlessons.co.uk
+#Copyright
+#######################################################
  
  
 #run script with:
@@ -37,7 +37,7 @@ printf "\nsFTP chroot (with mounts)\nBy LukesLinuxLessons"
 printf "\n----------------------------------------------\n\n"
  
 ###################################################################################
-############################sftp group section ####################################
+\############################sftp group section ####################################
 ###################################################################################
 checkifnewgroupexists() { #Check New Group exists or if it doesnt
 if [ ! "$newsftp" = "" ] && ( ! getent group "$newsftp" ); then #checks to make sure newsftp is not equal to nothing and the group does not exist already
