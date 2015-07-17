@@ -40,7 +40,7 @@ printf "\n----------------------------------------------\n\n"
 ############################sftp group section ####################################
 ###################################################################################
 checkifnewgroupexists() { #Check New Group exists or if it doesnt
-if [ ! "$newsftp" = "" ] && ( ! getent group "$newsftp" ); then #checks to make sure newsftp is not equal to nothing and the group does not exist already
+if [ ! "^$newsftp"$ = "" ] && ( ! getent group "$newsftp" ); then #checks to make sure newsftp is not equal to nothing and the group does not exist already
 read -p "Are you sure you want to create the group $newsftp? (y/N) " newsftpyn
   case $newsftpyn in
   y|ye|yes)
