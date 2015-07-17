@@ -1,5 +1,5 @@
 # sFTP-Chroot-with-BIND-Mounts
-Jail an sFTP user a directory using this bash script.  
+Jail an sFTP user to a directory using this bash script and add bind mounts
 
 
 ##
